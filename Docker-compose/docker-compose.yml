@@ -6,7 +6,7 @@ services:
     image: wordpress:4.9.6
     restart: always
     volumes:
-      - /Users/jamespeter/Downloads/jones/docker-html:/var/www/html
+      - /Users/jones/docker-html:/var/www/html
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_PASSWORD: root
@@ -18,7 +18,7 @@ services:
     image: mysql:5.7
     restart: always
     volumes:
-      - /Users/jamespeter/Downloads/jones/docker-database:/var/lib/mysql
+      - /Users/jones/docker-database:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
     networks:
